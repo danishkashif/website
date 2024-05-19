@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORSCHE PAKISTAN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <style>
+/*Nav Bar */
+
+          nav {
+            background-color: #333; /* dark gray background */
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+          .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+            }
+
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            }
+
+          li {
+            margin-right: 20px;
+            }
+
+          a {
+            color: #fff; /* white text color */
+            text-decoration: none;
+            }
+
+          a:hover {
+            color: #ccc; /* light gray text color on hover */
+            }
+
+          .phone-number {
+            font-size: 18px;
+            color: #fff; /* dark gray text color */
+            }
+
+          .search {
+            position: relative;
+            }
+
+          .search input[type="search"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 150px;
+            }
+
+          .search input[type="search"]:focus {
+            outline: none;
+            box-shadow: 0 0 5px #ccc;
+            }
+        
+
+        /* Custom styles for the carousel */
+        #carouselExampleIndicators {
+            display: flex;
+            max-height: 700px;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: #000000;
+          }
+        #carouselExampleIndicators .carousel-item img {
+            display:block;
+            height: 700px;
+            object-fit: cover;
+            width: 100%;
+          }
+        .first-image, .third-image {
+            object-fit: contain;
+            object-position: center;
+          }
+        
+        .c1 {
+           background-image: url('.jpeg');
+           background-size: 1300px 800px;
+           height: 80vh;
+           font-size: large;
+           text-align: center;
+           
+          }
+
+
+        .c1 h1 {
+          margin: 20px;
+        }
+
+        .c2 {
+          background-image: url("16.jpeg");
+          background-size: cover;
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat;
+          height: 80vh;
+          font-size: large;
+          text-align: center;
+        }
+
+        .c2 h1{
+          margin: 95px;
+        }
+
+        .c3 {
+          background-color: #f4f4f4;
+          background-size: 1300px 800px;
+          height: 90vh;
+          font-size: large;
+          text-align: center; 
+          margin: ;
+        }
+
+        .c3 h1{
+          margin: 20px;
+        }
+
+        .c4 {
+          background-image: url("18.jpeg");
+          background-size: cover;
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat;
+          height: 110vh;
+          font-size: large;
+          text-align: center; 
+        }
+
+        .c4 h2{
+          margin: 50px;
+          
+        }
+
+        .contact-form {
+          margin: 50px;
+          padding: 50px;
+          background-image: url("2.jpg");
+          text-align: center;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          flex-basis: calc(48px 5px);
+        }
+
+        .c5 {
+          text-align: center;
+          height: 80vh;
+          background-color: #f4f4f4;
+        }
+
+        footer {
+          background-color: #333;
+          color: #ffffff;
+          padding: 1px;
+          text-align: center;
+    
+        }
+
+        .nav-text {
+          padding:2px;
+        }
+
+
+                                                                   /*INQUIRY-FORM */
+
+        .container {
+            max-width: 5000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        .container-form{
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgb(30, 29, 29);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            color: #fff;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 2%;
+        }
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: #000000;
+            padding: 1px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 23px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .form-row {
+            display: flex;
+            margin-bottom: 2px;
+        }
+        .form-row div {
+            flex: 1;
+            margin-right: 1px;
+        }
+        .form-row div:last-child {
+            margin-right: 0;
+        }
+        .card{
+          display: flex;
+          text-align: center;
+        }
+
+        .c5 h2{
+          margin: auto;
+        }
+        
+        .footer {
+            background-color: #333;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #e7e7e7;
+        }
+        .footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            background-color: #333;
+        }
+        .footer .container div {
+            margin: 20px;
+            flex: 1;
+            min-width: 200px;
+        }
+        .footer h3 {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer ul li {
+            margin: 5px 0;
+        }
+        .footer ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .footer .newsletter input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #eee4e4;
+            border-radius: 4px;
+        }
+        .footer .newsletter input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ff9900;
+            border: none;
+            color: rgb(255, 255, 255);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .footer .contact p {
+            margin: 5px 0;
+        }
+        .footer .social a {
+            margin: 0 5px;
+            text-decoration: none;
+        }
+        .footer .social a img {
+            width: 24px;
+            height: 24px;
+        }
+        .footer-bottom {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .footer-bottom a {
+            color: #ff9900;
+            text-decoration: none;
+        }
+
+
+
+      </style>
+
+</head>
+<body>
+    <header>
+
+      <!--NAV BAR-->
+
+        <nav>
+            <div id="nav-bar" class="nav-bar">
+            <div class="logo">PORSCHE PAKISTAN</div>
+            <div style="display: inline-flex;" ; class="phone_no">03014512513</div>
+
+              <ul>
+                <li><a href="#my-porsche">My PORSCHE</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#maintenance">Maintenance</a></li>
+                <li><a href="#Shop">Shop</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+          </div>
+
+          <form class="searchbar">
+            <input class="search-bar" type="search" placeholder="Search" aria-label="Search">
+            <button class="search-button" type="submit">Search</button>
+          </form>
+        </nav>
+    </header>
+
+    <!-- CAROUSEL -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="15.jpeg" class="d-block w-100 first-image" alt="First Image">
+        </div>
+        <div class="carousel-item">
+          <img src="1.jpeg" class="d-block w-100" alt="Second Image">
+        </div>
+        <div class="carousel-item">
+          <img src="2.jpeg" class="d-block w-100 third-image" alt="Third Image">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!--CATEGORIES SECTION-->
+<!-- CARDS -->
+
+<section id="latest-blog" class="c5">
+
+  <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>CATEGORIES</b></h2>
+
+  <div class="container mt-5">
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card" >
+          <img src="10.jpeg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">SEDAN</h5>
+            <a href="#" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="13.jpeg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">SPORTS</h5>
+            <a href="#" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="14.jpeg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">SUV</h5>
+            <a href="#" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+
+<!-- CONTACT US SECTION -->
+
+<section id="contact-us" class="c2">
+  <div style="width: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <div style="display: flex; align-items: center;">
+      <div>
+        <h1 style="font-size: 40px;">Get your <B>PORSCHE</B> now !</h1>
+        <div style="margin-bottom: 60px;">
+          <a href="contact_us_link.html" style="font-size: 30px; color: rgb(144, 144, 144); text-decoration: underline;">Book Now</a>
+        </div>
+     </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODELS SECTION -->
+
+<section id="latest-projects" class="c3">
+  <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">MODELS</h1>
+
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+         <img src="1.jpeg" class="card-img-top" alt="Project 1">
+         <a href="#" class="btn btn-primary">Learn more</a>
+       </div>
+    </div>
+
+     <div class="col-md-3">
+       <div class="card">
+         <img src="2.jpeg" class="card-img-top" alt="Project 2">
+         <a href="#" class="btn btn-primary">Learn more</a>
+       </div>
+     </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="3.jpeg" class="card-img-top" alt="Project 3">
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
+     </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="4.jpeg" class="card-img-top" alt="Product 4">
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>    
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+         <img src="5.jpeg" class="card-img-top" alt="Project 5">
+         <a href="#" class="btn btn-primary">Learn more</a>
+       </div>
+    </div>
+
+     <div class="col-md-3">
+       <div class="card">
+         <img src="6.jpeg" class="card-img-top" alt="Project 6">
+         <a href="#" class="btn btn-primary">Learn more</a>
+       </div>
+     </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="7.jpeg" class="card-img-top" alt="Project 7">
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
+     </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="8.jpeg" class="card-img-top" alt="Project 8">
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+
+<!-- INQUIRY NOW SECTION -->
+
+<section id="inquiry-now" class="c4">
+
+  <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #fff;" ><b>Inquiry Now!</b></h2>
+
+  <div class="container-form">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+        <div class="form-row">
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</section>
+
+<!-- LATEST BLOG SECTION -->
+
+<section id="latest-blog" class="c5">
+
+  <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Latest Blog</b></h2>
+
+  <div class="container mt-5">
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card" >
+          <img src="4.jpeg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">911 GT3 RS</h5>
+            <p class="card-text">$650,000</p>
+            <a href="#" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="5.jpeg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">911 GT3 RS</h5>
+            <p class="card-text">$850,000</p>
+            <a href="#" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="7.jpeg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">911 GT3 RS</h5>
+            <p class="card-text">$990,000</p>
+            <a href="#" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+      <div class="logo">
+          <h2><b>PORSCHE PAKISTAN</b></h2>
+      </div>
+      <div class="download-app">
+          <h3>DOWNLOAD APP</h3>
+          <a href="#"><img src="19.png" alt="App Store" width="200"></a>
+      </div>
+      <div class="main-menu">
+          <h3>MAIN MENU</h3>
+          <ul style="display: block; text-align: center;">
+              <li><a href="#"><my-porsche></a>My PORSCHE</li>
+              <li><a href="#"><models></models></a>Models</li>
+              <li><a href="#"><services></a>Services</li>
+              <li><a href="#"><maintenance></a>Maintenance</li>
+              <li><a href="#"><shop</a>Shop</li>
+              <li><a href="#"><contact-us></a>Contact Us</li>
+          </ul>
+      </div>
+      <div class="work-with-us">
+          <h3>WORK WITH US</h3>
+          <ul style="display: block;">
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Careers</a></li>
+          </ul>
+      </div>
+      <div class="newsletter">
+          <h3>NEWSLETTER</h3>
+          <form action="#">
+              <input type="email" placeholder="Your Email">
+              <input type="submit" value="SUBMIT">
+          </form>
+      </div>
+      <div class="contact">
+          <h3>STAY CONNECTED</h3>
+          <div class="social">
+              <a href="#"><img src="20.png" alt="WhatsApp"></a>
+              <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+              <a href="#"><img src="21.png" alt="Facebook"></a>
+              <a href="#"><img src="22.png" alt="Twitter"></a>
+          </div>
+          <p>Call (141) <strong>12345678</strong></p>
+          <p>Email: info@porsche.com</p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>Copyright © 2017 porsche.com. All Rights Reserved.</p>
+  </div>
+</footer>
